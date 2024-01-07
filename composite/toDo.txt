@@ -1,0 +1,69 @@
+Certainly! Practicing with exercises is a great way to thoroughly understand the Composite Pattern. Here are some exercises that range from basic to more 
+complex scenarios. These exercises are designed to be applicable across various programming languages, though they are particularly common in object-oriented 
+languages like JavaScript, Java, or C#.
+
+### Exercise 1: File System Hierarchy
+
+**Task**: Create a file system representation using the Composite Pattern. Your system should include files and folders (directories). Folders can contain other 
+folders and files.
+
+**Key Concepts**:
+- A 'File' and a 'Folder' are your leaf and composite objects, respectively.
+- Both should have common operations like `getName()`, `getSize()`, and a method to display their details.
+
+### Exercise 2: Product Catalog
+
+**Task**: Design a product catalog where products are grouped into categories. Categories can also contain subcategories. Each product and category should have a 
+method to display their details.
+
+**Key Concepts**:
+- Use 'Product' as a leaf and 'Category' as a composite.
+- Implement methods to add/remove products in a category and to display the catalog.
+
+### Exercise 3: Graphical Shapes Drawing
+
+**Task**: Implement a system for drawing graphics where a graphic can be a simple shape (like a circle, square) or a group of shapes. Each shape or group should be 
+able to `draw()` itself.
+
+**Key Concepts**:
+- Simple shapes are leaves, while a group of shapes acts as a composite.
+- The composite should be able to add/remove shapes and invoke the `draw()` method on all its children.
+
+### Exercise 4: Organizational Structure
+
+**Task**: Build an organization chart. An organization has employees and departments. Departments can have sub-departments and employees. Implement functionality 
+to display the structure and to compute total salaries in a department.
+
+**Key Concepts**:
+- Departments are composites, and employees are leaves.
+- Include methods to add/remove employees and sub-departments.
+
+### Exercise 5: Menu System for a Restaurant
+
+**Task**: Design a menu system for a restaurant where a menu can consist of items and sub-menus. Each item and menu should have a method to display its contents.
+
+**Key Concepts**:
+- Menus are composites and items are leaves.
+- Include methods to add/remove items and sub-menus.
+
+### Exercise 6: ToDo List Application
+
+**Task**: Create a ToDo List application where a list can contain tasks and sub-lists. Each task and list should be able to mark itself as complete and display 
+its status.
+
+**Key Concepts**:
+- Lists are composites, and tasks are leaves.
+- Implement functionality to mark tasks as complete and to add/remove tasks and sub-lists.
+
+### Exercise 7: HTML DOM Representation
+
+**Task**: Simulate a simplified HTML DOM structure where an element can be a single HTML tag or a composite of tags. Implement functionality to render the HTML structure as a string.
+
+**Key Concepts**:
+- Tags like `div`, `span` are composites; others like `img`, `input` are leaves.
+- Implement a method to render the entire HTML structure from a root element.
+
+---
+
+Each of these exercises provides a practical scenario where the Composite Pattern is applicable. Start with the basic ones to grasp the core concept and then move 
+to more complex ones to deepen your understanding. Remember, the key idea is to manipulate both composite and leaf objects uniformly.
