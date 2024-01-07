@@ -1,0 +1,59 @@
+The Decorator Pattern is a structural design pattern that allows behavior to be added to individual objects, either statically or dynamically, without affecting the behavior of other objects from the same class. This pattern is particularly useful for adhering to the Open/Closed Principle, one of the SOLID principles in software engineering.
+
+Here are some exercises to practice the Decorator Pattern, which will help you understand how to dynamically add responsibilities to objects:
+
+### Exercise 1: Simple Coffee Shop
+
+**Task**: Create a coffee ordering system where you can add ingredients (like milk, sugar, cream) to basic coffee dynamically.
+
+- Implement a basic `Coffee` class.
+- Create decorators for each ingredient (`MilkDecorator`, `SugarDecorator`, `CreamDecorator`) that add flavors and costs.
+- Allow combining these decorators to create different coffee types.
+
+### Exercise 2: File System Permissions
+
+**Task**: Implement a file system where you can dynamically add different permissions (read, write, execute) to files.
+
+- Create a basic `File` class with a simple interface to `open()` and `close()`.
+- Implement decorators for each permission type (`ReadPermissionDecorator`, `WritePermissionDecorator`, `ExecutePermissionDecorator`) that add specific behaviors to the file operations.
+
+### Exercise 3: Graphical Shapes
+
+**Task**: Create a system to draw shapes where you can add properties (like color, border) to the shapes dynamically.
+
+- Implement basic shape classes (`Circle`, `Rectangle`).
+- Create decorators (`ColorDecorator`, `BorderDecorator`) that enhance shapes with additional styling properties.
+- The decorators should modify how shapes are drawn (e.g., color, border thickness).
+
+### Exercise 4: Notification System
+
+**Task**: Develop a notification system where you can dynamically add channels (email, SMS, push notification) through which notifications are sent.
+
+- Create a basic `Notification` class with a method to send a message.
+- Implement decorators for each notification channel (`EmailDecorator`, `SMSDecorator`, `PushNotificationDecorator`) that add the ability to send messages through those channels.
+
+### Exercise 5: Vehicle Customization
+
+**Task**: Design a vehicle customization system where you can add features (like a sunroof, alloy wheels, leather seats) to a basic car model dynamically.
+
+- Implement a basic `Car` class with standard features.
+- Create decorators (`SunroofDecorator`, `AlloyWheelsDecorator`, `LeatherSeatsDecorator`) to add custom features to the car.
+- Each decorator should adjust the cost and description of the car.
+
+### Exercise 6: Data Stream Encryption and Compression
+
+**Task**: Create a data stream where you can dynamically add encryption and compression functionalities.
+
+- Implement a `DataStream` class that writes data to a file or a buffer.
+- Create decorators (`EncryptionDecorator`, `CompressionDecorator`) that add encryption and compression layers to the data stream.
+
+### Exercise 7: Pizza Topping Adder
+
+**Task**: Build a pizza-making system where you can add toppings (like pepperoni, cheese, vegetables) to a basic pizza dynamically.
+
+- Start with a basic `Pizza` class.
+- Implement decorators for various toppings (`PepperoniDecorator`, `CheeseDecorator`, `VegetableDecorator`) that add toppings and adjust the price.
+
+---
+
+Each exercise provides a practical use case for the Decorator Pattern, allowing for the dynamic addition of functionalities or properties to objects. The key idea is to start with a simple object and use decorators to enhance it with additional features without changing the object's core class.
