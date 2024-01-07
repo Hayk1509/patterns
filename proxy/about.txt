@@ -1,0 +1,69 @@
+The Proxy Pattern is a structural design pattern that provides an object acting as a substitute or placeholder for another object to control access to it. 
+This pattern is widely used to control the interaction with an object, add additional functionalities, or delay the costly initialization of an object until 
+it's needed. Here are some exercises to help you understand and implement the Proxy Pattern:
+
+### Exercise 1: Image Loading Proxy
+
+**Task**: Create a proxy for image loading. The proxy should delay the loading of a high-resolution image until it's actually needed, for instance, when an 
+`displayImage` method is called.
+
+**Key Concepts**:
+- Implement a `RealImage` class that loads the actual image.
+- The `ProxyImage` class should hold a reference to `RealImage` but delay its loading.
+- On calling `displayImage`, the `ProxyImage` should load the `RealImage` if it's not already loaded.
+
+### Exercise 2: Access Control for a Secure System
+
+**Task**: Implement a proxy to control access to a secure system. The proxy should allow only authorized users to access certain methods of the system.
+
+**Key Concepts**:
+- The `SecureSystem` class contains sensitive methods.
+- The `ProxySystem` class checks user credentials before allowing access to the `SecureSystem`'s methods.
+- Use the proxy to intercept the method calls and perform authentication.
+
+### Exercise 3: Logging Access to a Service
+
+**Task**: Create a logging proxy for a service. The proxy should log each method call, its arguments, and the time of access before delegating the call to 
+the service.
+
+**Key Concepts**:
+- Implement a `Service` class with some methods.
+- The `LoggingProxy` class should wrap the `Service` and add logging behavior to its methods.
+
+### Exercise 4: Virtual Proxy for Lazy Initialization
+
+**Task**: Implement a virtual proxy for lazy initialization of an object. The proxy should create the object only when its functionality is actually required.
+
+**Key Concepts**:
+- Have a `ResourceIntensiveObject` class with resource-intensive operations.
+- The `VirtualProxy` class holds a reference to `ResourceIntensiveObject` but initializes it only when its methods are called for the first time.
+
+### Exercise 5: Network Connection Proxy
+
+**Task**: Create a proxy that controls access to a network resource, potentially adding caching or throttling functionalities.
+
+**Key Concepts**:
+- The `NetworkResource` class simulates interaction with a network.
+- The `NetworkProxy` class adds additional control, like caching results of requests or limiting the rate of requests.
+
+### Exercise 6: Database Access Proxy
+
+**Task**: Design a proxy to a database connection that logs queries, measures query execution time, or controls the number of active database connections.
+
+**Key Concepts**:
+- A `DatabaseConnection` class handles actual database queries.
+- The `DatabaseProxy` class wraps `DatabaseConnection` to add logging, performance measurement, or connection pooling.
+
+### Exercise 7: Property Access Proxy
+
+**Task**: Implement a proxy to control access to properties of an object, adding validation or type checking.
+
+**Key Concepts**:
+- Have a `DataObject` class representing a data structure.
+- The `DataProxy` class wraps `DataObject` and validates any changes to its properties or provides read-only access.
+
+---
+
+Each of these exercises allows you to practice different aspects of the Proxy Pattern. Start with simpler tasks like the image loader or the logging proxy to 
+get a feel for the basic principles. Then, move on to more complex ones involving access control or lazy initialization. Remember, the Proxy Pattern is about 
+controlling and managing access to another object, and these exercises are designed to give you hands-on experience with this concept.
